@@ -68,7 +68,7 @@ if [ ! -f "/config/custom-cont-init.d/addcustomcronjob" ]; then
 fi
 
 # upgrade the db
-if [ ! -f "/config/www/spotweb/upgrade-db.php" ]; then
+if [ ! -f "/config/www/spotweb/bin/upgrade-db.php" ]; then
 	echo "$(format_date) [INFO] upgrade-db.php not found, no upgrade needed..."
 else
 	echo "$(format_date) [INFO] upgrade-db.php found.. performing upgrade. If this fails and your dont have a backup of your sql spotweb db you may be fuc..d"
